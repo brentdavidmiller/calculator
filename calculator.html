@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+  <script defer src="calculator.js"></script>
+  <style>
+    /*remove input area arrows Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+     /*remove input area arrows Chrome, Safari, Edge, Opera*/
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <main>
+
+      <h1>Calculator</h1>
+
+      <div id="calculator">
+        <div id="inputArea">
+          <input id="userInput" disabled value="0" maxlength="10"/>
+        </div>
+
+        <div id="action">
+        <div class="operators"> <!--Column-->
+          <button class ="op" id="add">+</button>
+          <button class ="op" id="subtract">-</button>
+          <button class ="op" id="multiply">*</button>
+          <button class ="op" id="divide">/</button>
+          <button class id="backspace">backspace</button>
+          <!-- <button class ="op" id="equals">=</button> -->
+        </div>
+        
+        <div class="numbers"> <!--4 rows and 3 columns-->
+          <button class="num" id="zero">0</button>
+          <button class="num" id="one">1</button>
+          <button class="num" id="two">2</button>
+          <button class="num" id="three">3</button>
+          <button class="num" id="four">4</button>
+          <button class="num" id="five">5</button>
+          <button class="num" id="six">6</button>
+          <button class="num" id="seven">7</button>
+          <button class="num" id="eight">8</button>
+          <button class="num" id="nine">9</button>
+          <button id="decimal">.</button>
+          <button id="clear">C</button>
+          <button id="equals">=</button>
+        </div>
+      </div>
+
+      </div>
+    </main>
+</body>
+</html>

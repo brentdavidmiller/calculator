@@ -1,0 +1,147 @@
+main {
+    
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    height: 75px;
+    width: 75px;
+    cursor: pointer;
+    margin: 2px;
+    padding: 0px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+#calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    max-height: 700px;
+    max-width: 350px;
+    min-width: none;
+    border: 10px;
+    padding: 0px;
+    margin: 0 auto;
+
+    border: 5px solid black;
+}
+
+#userInput {
+    height: 60px;
+    width: 312px;
+    border: 2px solid black;
+    color: black;
+    font-size: 50px;
+    text-align: right;
+    font-family: monospace;
+    margin: 5px;
+}
+
+.operators {
+    /* border: 2px solid black; */
+    height: 396px;
+    width: 76px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0;
+    margin-top: 2px;
+}
+.op {
+    color: black;
+    background-color: orange;
+}
+
+.numbers {
+    /* border: 2px solid black; */
+    height: 400px;
+    width: 240px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row-reverse;
+    flex-wrap: wrap-reverse;
+
+    font-family: monospace;
+}
+
+.num {
+    color: black;
+    background-color: lightgrey;
+}
+
+#action {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#zero {
+    order: 3;
+}
+#one {
+    order: 6;
+}
+#two {
+    order: 5;
+}
+#three {
+    order: 4;
+}
+#four {
+    order: 9;
+}
+#five {
+    order: 8;
+}
+#six {
+    order: 7;
+}
+#seven {
+    order: 12;
+}
+#eight {
+    order: 11;
+}
+#nine {
+    order: 10;
+}
+#decimal {
+    order: 2;
+    background-color: darkgrey;
+    color: black;
+}
+#clear {
+    order: 1;
+    background-color: darkgrey;
+    color: black;
+}
+#equals {
+    order: 0;
+
+    height: 75px;
+    width: 232px;
+    
+    margin: 2px;
+    padding: 5px;
+
+    background-color: darkgrey;
+    color: black;
+}
+#backspace {
+    background-color: darkgrey;
+    color: black;
+    font-size: 14px;
+}
